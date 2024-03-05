@@ -26,11 +26,11 @@ function checkUserInput() {
             alert('BUUUUUUUHHHHHH')
         }
     
-        if (username.trim().length > 0 && password.trim().length > 0) {
-            alert('Velkommen ' + username); }
-        else {
-            alert('Indtast venligst et gyldigt brugernavn og kodeord.');
-        }
+        // if (username.trim().length > 0 && password.trim().length > 0) {
+        //    alert('Velkommen ' + username); }
+        // else {
+        //    alert('Indtast venligst et gyldigt brugernavn og kodeord.');
+        // }
     
         document.getElementById("username").value = "";
         document.getElementById("password").value = "";
