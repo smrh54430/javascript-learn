@@ -43,4 +43,10 @@ function checkUserInput() {
         console.log(danskePenge.format(usd*7));
     }
     convertCurrency();
+
+    function generateRandomNumber() {
+        return Math.floor(Math.random() * (500 - 66 + 1)) + 66;
+    }
+    console.log(`Execute Order ${generateRandomNumber()}`);
+    generateRandomNumber();
     
