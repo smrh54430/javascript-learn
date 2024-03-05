@@ -14,17 +14,17 @@ function checkUserInput() {
     let password = document.getElementById('password').value;
     const regexEmail = /\S+@\S+\.\S+/;
     
-        if (password.length < 8) {
-            alert('WROOOOONG');
-        } else{
-            alert('welcome')
+        if ((password.length > 7) && (regexEmail.test(username))) {
+                alert('YEEEEAAAAAAHHHHHH')
+        } else {
+            alert('WROOONG')
         }
     
-        if (regexEmail.test(username)) {
-            alert('YEEEEAAAAAAHHHHHH')
-        } else {
-            alert('BUUUUUUUHHHHHH')
-        }
+        //if (regexEmail.test(username)) {
+        //    alert('YEEEEAAAAAAHHHHHH')
+        //} else {
+        //    alert('BUUUUUUUHHHHHH')
+       // }
     
         // if (username.trim().length > 0 && password.trim().length > 0) {
         //    alert('Velkommen ' + username); }
