@@ -56,3 +56,7 @@ function checkUserInput() {
     console.log(today.getMonth());
     console.log(today.getDay());
     console.log(today.getDate());
+
+    let todayHours = today.getHours();
+    let todayMinutes = today.getMinutes();
+    console.log(`klokken er: §{todayHours}:§{todayMinutes}`)
