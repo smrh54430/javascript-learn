@@ -1,24 +1,5 @@
-function checkUserInput(username, password) {
-    return username && password ? "Velkommen, " + username + "." : "Indtast venligst et gyldigt brugernavn og kodeord.";
+function generateRandomNumber(min=66, max = 500) {
+    return Math.floor(Math.random() * (max-min+1)+min);
 }
-
-console.log(checkUserInput('Julemand', 'password123'));
-console.log(checkUserInput('', 'password123')); 
-console.log(checkUserInput('Julemand', '')); 
-
-function convertCurrency(pengIUS) {
-    const exchangeRate = 7.5; 
-
-    
-    const amountInDKK = (pengIUS * exchangeRate).toLocaleString('da-DK', {
-        style: 'currency',
-        currency: 'DKK'
-    });
-
-    return amountInDKK;
-}
-
-// Test af funktionen
-console.log(convertCurrency(100)); // kr. 750,00
-console.log(convertCurrency(250)); // kr. 1.875,00
+console.log (`Execute Order ${generateRandomNumber(1,8)}`);
 
