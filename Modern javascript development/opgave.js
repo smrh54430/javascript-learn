@@ -62,7 +62,7 @@ function checkUserInput() {
     console.log(todayHours , todayMinutes);
 
 
-const princess = ['Bubblegum','Lumpyspace','Hotdog','Lumpyspace','Flame','Breakfast','Wildberry','Ghost','Nightmare','Raggedy','Slime'];
+const princess = ['Bubblegum','Lumpy space','Hotdog','Lumpy space','Flame','Breakfast','Wildberry','Ghost','Nightmare','Raggedy','Slime'];
  const princessUnique = [];
  princess.forEach((value) => {
     const index  = princessUnique.findIndex((element) => element === value);
@@ -72,6 +72,18 @@ const princess = ['Bubblegum','Lumpyspace','Hotdog','Lumpyspace','Flame','Breakf
  });
 console.log(princessUnique);
 
-const princessSet = new Set (princess);
-const uniquePrincess = Array.from(princessSet);
-console.log(uniquePrincess);
+
+// const uniquePrincess = [... new Set(princess)];
+// const princessSet = new Set (princess);
+//samlet løsning  const uniquePrincess = Array.from(princessSet);
+// console.log(uniquePrincess);
+
+console.log([... new Set(princess)]);
+
+console.log(princess);
+console.log(princess.indexOf(`Flame`));
+
+let oneWordPrincessName = princessUnique.find(girls => girls.includes(' '));
+let oneWordPrincessIndex = princessUnique.findIndex(girls => girls.includes(' '));
+console.log(`the first entry with a space is ${oneWordPrincessName} and its index is ${oneWordPrincessIndex}.`);
+
