@@ -89,3 +89,36 @@ console.log(`the first entry with a space is ${oneWordPrincessName} and its inde
 
 princessUnique.splice(2, 1, `Finn`, `Jake`);
 console.log(princessUnique);
+
+princessUnique.sort();
+console.log(princessUnique);
+
+const princessAge = [
+    {name: 'Bubblegum', age: 24},
+    {name: 'Lumpy space', age: 67},
+    {name: 'Hotdog', age: 35},
+    {name: 'Lumpy space', age: 67},
+    {name: 'Flame', age: 50},
+    {name: 'Breakfast', age: 52},
+    {name: 'Wildberry', age: 46},
+    {name: 'Ghost', age: 34},
+    {name: 'Nightmare', age: 666},
+    {name: 'Raggedy', age: 33},
+    {name: 'Slime', age: 111}];
+
+  //  princessAge.sort(function(a, b){
+  //      if (a.age < b.age){
+  //          return -1;
+  //      } else if (a.age > b.age){
+  //          return 1;
+  //      } else {
+  //          return 0;
+  //      }
+  //  });
+ // princessAge.sort((a, b) => a.age - b.age);
+
+  //  console.log(princessAge);
+
+  princessAge.sort((a, b) => a.name.localeCompare(b.name));
+
+  console.log(princessAge);
