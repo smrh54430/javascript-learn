@@ -60,3 +60,18 @@ function checkUserInput() {
     let todayHours = today.getHours().toString().padStart(2,0);
     let todayMinutes = today.getMinutes().toString().padStart(2,0);
     console.log(todayHours , todayMinutes);
+
+
+const princess = ['Bubblegum','Lumpyspace','Hotdog','Lumpyspace','Flame','Breakfast','Wildberry','Ghost','Nightmare','Raggedy','Slime'];
+ const princessUnique = [];
+ princess.forEach((value) => {
+    const index  = princessUnique.findIndex((element) => element === value);
+    if (index === -1) {
+        princessUnique.push(value);
+    }
+ });
+console.log(princessUnique);
+
+const princessSet = new Set (princess);
+const uniquePrincess = Array.from(princessSet);
+console.log(uniquePrincess);
