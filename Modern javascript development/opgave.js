@@ -119,6 +119,7 @@ const princessAge = [
 
   //  console.log(princessAge);
 
+  // localecompare sorterer på samme måde som - den fungerer bare også med bogstaver
   princessAge.sort((a, b) => a.name.localeCompare(b.name));
 
   console.log(princessAge);
