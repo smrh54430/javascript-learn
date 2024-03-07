@@ -87,3 +87,5 @@ let oneWordPrincessName = princessUnique.find(girls => girls.includes(' '));
 let oneWordPrincessIndex = princessUnique.findIndex(girls => girls.includes(' '));
 console.log(`the first entry with a space is ${oneWordPrincessName} and its index is ${oneWordPrincessIndex}.`);
 
+princessUnique.splice(2, 1, `Finn`, `Jake`);
+console.log(princessUnique);
