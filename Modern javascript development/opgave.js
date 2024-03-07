@@ -56,3 +56,7 @@ function checkUserInput() {
     console.log(today.getMonth());
     console.log(today.getDay());
     console.log(today.getDate());
+
+    let todayHours = today.getHours().toString().padStart(2,0);
+    let todayMinutes = today.getMinutes().toString().padStart(2,0);
+    console.log(todayHours , todayMinutes);
