@@ -83,6 +83,15 @@ console.log([... new Set(princess)]);
 console.log(princess);
 console.log(princess.indexOf(`Flame`));
 
+const findIndices = (arr, val) => {
+    return arr.map((element, index) => {
+        return element === val ? index : undefined;
+    }).filter(index => index !== undefined);
+};
+
+const indices = findIndices(princess, 'Flame');
+console.log(indices);
+
 let oneWordPrincessName = princessUnique.find(girls => girls.includes(' '));
 let oneWordPrincessIndex = princessUnique.findIndex(girls => girls.includes(' '));
 console.log(`the first entry with a space is ${oneWordPrincessName} and its index is ${oneWordPrincessIndex}.`);
