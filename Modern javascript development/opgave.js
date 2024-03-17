@@ -87,6 +87,17 @@ let oneWordPrincessName = princessUnique.find(girls => girls.includes(' '));
 let oneWordPrincessIndex = princessUnique.findIndex(girls => girls.includes(' '));
 console.log(`the first entry with a space is ${oneWordPrincessName} and its index is ${oneWordPrincessIndex}.`);
 
+// Brug map() til at skabe et nyt array med et objekt for hver prinsesse, der indeholder navnet og dens index.
+const princessWithIndex = princess.map((value, index) => ({ name: value, index }));
+
+// Brug filter() til at filtrere objekterne, der har navne, der indeholder mellemrum.
+const princessWithSpace = princessWithIndex.filter(princessObj => princessObj.name.includes(' '));
+
+// Udskriv de fundne prinsesser med deres indeks via konsollen.
+princessWithSpace.forEach(princessObj => {
+    console.log(`Princess: ${princessObj.name}, Index: ${princessObj.index}`);
+});
+
 princessUnique.splice(2, 1, `Finn`, `Jake`);
 console.log(princessUnique);
 
